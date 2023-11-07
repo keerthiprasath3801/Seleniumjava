@@ -1,0 +1,36 @@
+package com.keerthiprasath.Techassessment3;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Wishlistpagestepdefinition {
+	@Given("I am on the Homepage of the democart after login")
+	public void i_am_on_the_homepage_of_the_democart_after_login() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("I Search for the products in the search bar it will show")
+	public void i_search_for_the_products_in_the_search_bar_it_will_show() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("after the searching for the products i have to click the product")
+	public void after_the_searching_for_the_products_i_have_to_click_the_product() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("click the product and add it to the wishlist")
+	public void click_the_product_and_add_it_to_the_wishlist() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Check the product is in the wishlist or not")
+	public void check_the_product_is_in_the_wishlist_or_not() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+}

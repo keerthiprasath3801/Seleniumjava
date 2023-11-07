@@ -1,0 +1,11 @@
+#Author:Keerthiprasath.srinivasan@expleogroup.com
+Feature: User Registration
+
+  Scenario: Successful user registration
+    Given I am on the registration page
+    When I enter the following details
+      | firstName | lastName | email           | password |
+      | keerthi   | prasath   |  skprasathbabyboy@gmail.com|  password |
+    And agree the terms and policy
+    And I submit the registration form
+    Then I should see a successful registration message

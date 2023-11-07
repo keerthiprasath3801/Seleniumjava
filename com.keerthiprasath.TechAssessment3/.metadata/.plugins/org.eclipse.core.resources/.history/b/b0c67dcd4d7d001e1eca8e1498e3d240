@@ -1,0 +1,15 @@
+package com.keerthiprasath.Techassessment3;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Loginpagelocators {
+	@FindBy(xpath="//input[@name=\"Email\"]")
+	WebElement Email;
+	
+	@FindBy(xpath="//input[@name=\"Password\"]")
+	WebElement password;
+	
+	@FindBy(xpath="//input[@class=\"button-1 login-button\"]")
+	WebElement loginbutton;
+}

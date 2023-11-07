@@ -1,0 +1,45 @@
+package com.keerthiprasath.Techassessment3;
+
+import org.openqa.selenium.support.PageFactory;
+
+public class RegisterpageActions {
+	RegisterpageLocators RegisterPageLocators = null;
+	String strUserName, strPassword;   //read it from external file and store it here
+	
+	public RegisterpageActions() {  //constructor
+		this.RegisterPageLocators = new RegisterpageLocators ();
+		
+		PageFactory.initElements(Helperclass.getDriver(), RegisterPageLocators);
+	}
+	
+	//set username in textbox
+	public void setfirstName(String strFirstName) {
+		RegisterPageLocators.Firstname.sendKeys(strUserName);
+	}
+	
+	public void setlastName(String strLastName) {
+		RegisterPageLocators.Lastname.sendKeys(strLastName);
+	}
+	public void setemail(String stremail) {
+		RegisterPageLocators.Email.sendKeys(stremail);
+	}
+	
+	//set password in textbox
+	public void setPassword(String strPassword) {
+		RegisterPageLocators.password.sendKeys(strPassword);
+	}
+	
+	//set click
+	public void clickLogin() {
+		RegisterPageLocators.login.click();
+	}
+	
+	public void login(String strUserName, String strPassword) {
+		
+		//fill username
+		this.setfirstName(strUserName);
+		//fill password
+		this.setPassword(strPassword);
+	}
+
+}

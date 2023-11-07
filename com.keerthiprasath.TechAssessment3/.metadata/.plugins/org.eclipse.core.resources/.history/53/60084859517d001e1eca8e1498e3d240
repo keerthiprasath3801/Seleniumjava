@@ -1,0 +1,15 @@
+#Author: keerthiprasath.srinivasan@expleogroup.com
+Feature: Login to the democart  website
+	@Validloginuser
+  Scenario: Successful user login
+    Given I am on the login page
+    When I enter valid credentials
+    And I submit the login form
+    Then I should be logged in successfully
+	@InValidloginuser
+  Scenario: Unsuccessful user login
+    Given I am on the login page
+    When I enter invalid credentials
+    And I submit the login form
+    Then I should see an error message
+

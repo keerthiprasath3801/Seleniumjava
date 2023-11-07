@@ -1,0 +1,23 @@
+package com.keerthiprasath.Techassessment3;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Loginpagelocators {
+	@FindBy(xpath="//a[@href=\"/register\"]")
+	WebElement Registerclick;
+	
+	@FindBy(xpath="//input[@id='gender-male']")
+	WebElement Gender;
+	
+	@FindBy(xpath="(//input[@class=\"text-box single-line\"])[1]")
+	WebElement Firstname;
+	
+	@FindBy(xpath="(//input[@class=\"text-box single-line\"])[2]")
+	WebElement Lastname;
+	
+	@FindBy(xpath="(//input[@class=\"text-box single-line\"])[3]")
+	WebElement Email;
+	
+	
+}

@@ -1,0 +1,17 @@
+package Login;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.keerthiprasath.Techassessment3.Helperclass;
+import com.keerthiprasath.Techassessment3.RegisterLocators;
+
+public class LoginpageActions {
+		Loginpagelocators logAc;
+		
+		LoginpageActions(){
+			logAc = new Loginpagelocators();
+			
+			PageFactory.initElements(Helperclass.getDriver(),logAc);
+		}
+		
+}

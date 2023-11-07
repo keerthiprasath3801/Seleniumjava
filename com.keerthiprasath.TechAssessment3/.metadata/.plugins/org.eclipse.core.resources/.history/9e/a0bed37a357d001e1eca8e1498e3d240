@@ -1,0 +1,14 @@
+#Author:Keerthiprasath.srinivasan@expleogroup.com
+Feature: User Registration
+
+  Scenario: Successful user registration
+    Given I am on the registration page url "https://demowebshop.tricentis.com/register"
+    When I enter the following details
+     |	Gender	|	Male	|
+ |	First name	| Keerthi	|
+ |	Last	name	| prasath	|
+ |  Email	|	 keerthiprasath2001@gmail.com	|
+ |	Password	| skprasath@2001	|
+ |	Confirm Password		|	skprasath@2001	| 
+    And I submit the registration form
+   	Then I should see a successful registration messag

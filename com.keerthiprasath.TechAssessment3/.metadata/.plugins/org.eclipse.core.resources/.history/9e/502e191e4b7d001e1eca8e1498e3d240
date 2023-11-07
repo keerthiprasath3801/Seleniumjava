@@ -1,0 +1,40 @@
+package com.keerthiprasath.Techassessment3;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class RegisterpageStepdefintion {
+	
+	Helperclass data = new Helperclass();
+	
+	RegisterpageActions objRegister = new RegisterpageActions();
+	
+	@Given("User opens in Opencart HomePage")
+	public void user_opens_in_opencart_home_page() {
+		Helperclass.openPage(data.url);
+	    System.out.println("login page");
+	}
+
+	@When("User clicks Register link")
+	public void user_clicks_register_link() {
+		objRegister.clickRegister();
+     	System.out.println("login button");
+	}
+
+	@When("User enters Genter,Firstname,Lastname,E-Mail,Password and CPassword")
+	public void user_enters_genter_firstname_lastname_e_mail_password_and_c_password(io.cucumber.datatable.DataTable dataTable) {
+		System.out.println("Getting the name");
+	}
+
+	@When("User click register button")
+	public void user_click_register_button() {
+//		
+		objRegister.clickRegistersubmit("Register");
+	}
+
+	@Then("User get successfully registerd message and log out")
+	public void user_get_successfully_registerd_message_and_log_out() {
+	    System.out.println("They successfully login");
+	}
+}

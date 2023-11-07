@@ -1,0 +1,27 @@
+package com.keerthiprasath.Techassessment3;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class RegisterpageStepdefintion {
+	@Given("I am on the registration page url {string}")
+	public void i_am_on_the_registration_page_url(String string) {
+	
+	}
+
+	@When("I enter the following details")
+	public void i_enter_the_following_details(io.cucumber.datatable.DataTable dataTable) {
+	
+	}
+
+	@When("I submit the registration form")
+	public void i_submit_the_registration_form() {
+
+	}
+
+	@Then("I should see a successful registration messag")
+	public void i_should_see_a_successful_registration_messag() {
+
+	}
+}

@@ -1,0 +1,22 @@
+package Login;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.keerthiprasath.Techassessment3.Helperclass;
+import com.keerthiprasath.Techassessment3.RegisterLocators;
+
+public class LoginpageActions {
+		Loginpagelocators logAc;
+		
+		LoginpageActions(){
+			logAc = new Loginpagelocators();
+			
+			PageFactory.initElements(Helperclass.getDriver(),logAc);
+		}
+		public void setEmail(String email) {
+			logAc.Email.sendKeys(email);
+		}
+		public void setPassword(String password) {
+			logAc.password.sendKeys(password);
+		}
+}
